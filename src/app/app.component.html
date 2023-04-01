@@ -1,7 +1,36 @@
 <div class="header">
+  <img
+  width="80"
+  alt="Angular Logo"
+  src="../assets/mobiletic.png"
+/>
+<span>Test technique pour le poste de développeur Front-End (Angular)</span>
+
+
+<div class="header_search">
+  <input type="text" [(ngModel)] = "searchQuery">
+  <!-- <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon> -->
+  <img
+  width="20"
+  alt="Search icon"
+  src="../assets/search.png"
+/>
+</div>
 
 </div>
 
 <div class="content">
-  
+  <div class="content-add">
+    <input type="text" [(ngModel)] = "newServer">
+    <!-- <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon> -->
+    <img
+    width="20"
+    alt="Search icon"
+    src="../assets/add.png"
+    (click)="onAddServer()"
+  />
+  </div>  
+
+ <app-server *ngFor="let server of serveurList" [serverData]="server">
+ </app-server>
 </div>

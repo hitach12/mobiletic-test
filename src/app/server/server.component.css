@@ -1,0 +1,39 @@
+.server-outer{
+    height: 40px;
+    width: 200  px;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(185, 185, 185);
+    margin: 5px;
+    border-radius: 10px;
+
+}
+.server-inner{
+    width: 99%;
+    height: 99%;
+    border: 2px white solid;
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    
+    
+
+}
+.server-inner > h4{
+    color: rgb(60, 59, 59);
+
+} 
+
+.stateDiv{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: red;
+    display: block;
+    margin-left: 5px;
+    margin-right: 2px;
+    cursor: pointer;
+}

@@ -1,0 +1,12 @@
+
+<div class="server-outer">
+
+    <div class="server-inner">
+
+        <h4>{{serverData?.name}} : {{serverData?.ipAddress}}</h4>
+        <div class="stateDiv" [ngStyle]="{backgroundColor :serverData?.state ===true? 'green' :'red'}" (click) = 'onstateChanged()' >        </div>
+
+    </div>
+
+</div>
+
